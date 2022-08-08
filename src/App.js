@@ -11,7 +11,7 @@ const App = () => {
     []
   );
     const getMovieRequest = async () => {
-      const url = 'https://kalavithi-service-dev.herokuapp.com/api/images';
+      const url = 'https://kalavithi-service-team-01-dev.herokuapp.com/api/images';
 
       const response = await fetch(url);
       const responseJson = await response.json();
