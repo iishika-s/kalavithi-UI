@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import KalaList from './Components/KalaList';
-import KalaListHeading from './Components/KalaListHeading';
+import KalaListHeading from './Components/kalaListHeading/KalaListHeading';
 import SearchBox from './Components/SearchBox';
 import AddFavourite from './Components/AddFavourites';
 
@@ -11,7 +11,7 @@ const App = () => {
     []
   );
     const getMovieRequest = async () => {
-      const url = 'https://kalavithi-service-dev.herokuapp.com/api/images';
+      const url = 'http://localhost:8080/api/images';
 
       const response = await fetch(url);
       const responseJson = await response.json();
